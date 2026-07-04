@@ -6,15 +6,11 @@ Authors@R:
 Description: What the package does (one paragraph).
 License: MIT + file LICENSE
 Imports: 
-    checkmate,
-    cli,
     glue,
-    kableExtra,
     lifecycle,
     magrittr,
     rlang,
-    tibble,
-    withr
+    tibble
 Suggests:
     testthat
 Encoding: UTF-8

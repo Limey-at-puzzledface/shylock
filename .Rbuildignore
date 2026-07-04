@@ -10,3 +10,4 @@
 ^STYLE\.qmd$
 ^docs$
 ^\.github$
+^LICENSE\.md$
