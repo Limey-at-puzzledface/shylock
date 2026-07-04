@@ -1,0 +1,17 @@
+---
+title: "ADR-0003"
+format: html
+editor: visual
+---
+
+## ADR-0003
+
+Use S3 Value Objects
+
+Domain concepts are represented by immutable S3 classes.
+
+## Examples
+
+`Mortgage,` `InterestSchedule` and `PaymentSchedule`.
+
+Construction and validation are separated from calculation.

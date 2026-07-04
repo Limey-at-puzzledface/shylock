@@ -1,0 +1,127 @@
+---
+title: "Architecture"
+format: html
+editor: visual
+---
+
+# Architecture
+
+## Purpose
+
+This document describes the architectural principles governing the *shylock* project.
+
+## Design Philosophy
+
+The project follows the IWARD architecture.
+
+- Ingestion
+- Wrangling
+- Analysis
+- Reporting
+- Documentation
+
+Each layer has a single responsibility.
+
+No function shall cross a layer boundary.
+
+Dependencies are permitted only from higher layers to lower layers.
+
+## Domain Model
+
+The initial domain model comprises:
+
+- Mortgage
+- InterestSchedule
+- PaymentSchedule
+- OverpaymentSchedule
+- Amortisation
+- Scenario
+
+These objects form the public API of the calculation engine.
+
+## Calculation Engine
+
+The calculation engine is pure.
+
+It shall:
+
+- accept validated domain objects,
+- perform deterministic calculations,
+- return immutable results,
+- produce no side effects.
+
+The engine shall not depend upon:
+
+- Shiny,
+- Excel,
+- plotting,
+- files,
+- user interaction.
+
+## User Interface
+
+The Shiny application is a client of the calculation engine.
+
+It performs:
+
+- input collection,
+- validation,
+- presentation,
+- interaction.
+
+Business logic remains within the Analysis layer.
+
+## Reporting
+
+Reporting consumes the output of the calculation engine.
+
+Examples include:
+
+- tables,
+- charts,
+- Excel export,
+- PDF reports.
+
+Reporting does not perform financial calculations.
+
+## Testing
+
+The calculation engine shall have comprehensive unit tests.
+
+Regression tests shall accompany all defect fixes.
+
+## Extensibility
+
+Future enhancements should be introduced by extending schedules rather than modifying calculation logic.
+
+Examples include:
+
+- variable interest rates,
+- offset mortgages,
+- payment holidays,
+- ad hoc overpayments.
+
+The calculation engine should not require architectural changes to support these features.
+
+------------------------------------------------------------------------
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).

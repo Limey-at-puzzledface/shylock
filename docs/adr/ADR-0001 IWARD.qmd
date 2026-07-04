@@ -1,0 +1,45 @@
+---
+title: "ADR-0001 IWARD"
+format: html
+editor: visual
+---
+
+# ADR-0001
+
+Use the IWARD Architecture
+
+## Status
+
+Accepted.
+
+## Decision
+
+The project shall be organised into five conceptual layers:
+
+- Ingestion
+
+- Wrangling
+
+- Analysis
+
+- Reporting
+
+- Documentation
+
+Each layer has a single responsibility.
+
+Dependencies are permitted only from higher layers to lower layers.
+
+No function may cross a layer boundary.
+
+## Consequences
+
+### Advantages
+
+High cohesion. Low coupling. Excellent testability. Clear ownership of responsibilities.
+
+### Trade-offs
+
+Slightly more boilerplate. More objects.
+
+Accepted because maintainability is preferred over brevity.

@@ -1,0 +1,33 @@
+---
+title: "ADR-XXXX: Short title"
+format: html
+editor: visual
+---
+
+## Status
+
+Proposed \| Accepted \| Superseded \| Deprecated
+
+## Context
+
+Why are we making this decision?
+
+## Decision
+
+What have we decided?
+
+## Consequences
+
+### Advantages
+
+### Disadvantages
+
+### Future implications
+
+## Alternatives considered
+
+### Option A
+
+### Option B
+
+### Reasons for rejection

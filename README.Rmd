@@ -1,0 +1,40 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# shylock
+
+<!-- badges: start -->
+[![Codecov test coverage](https://codecov.io/gh/Limey-at-puzzledface/shylock/graph/badge.svg)](https://app.codecov.io/gh/Limey-at-puzzledface/shylock)
+[![R-universe version](https://Limey-at-puzzledface.r-universe.dev/shylock/badges/version)](https://Limey-at-puzzledface.r-universe.dev/shylock)
+[![R-CMD-check](https://github.com/Limey-at-puzzledface/shylock/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Limey-at-puzzledface/shylock/actions/workflows/R-CMD-check.yaml)
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![CRAN status](https://www.r-pkg.org/badges/version/shylock)](https://CRAN.R-project.org/package=shylock)
+<!-- badges: end -->
+
+The goal of shylock is to ...
+
+What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+
+```{r cars}
+summary(cars)
+```
+
+You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
+
+You can also embed plots, for example:
+
+```{r pressure, echo = FALSE}
+plot(pressure)
+```
+
+In that case, don't forget to commit and push the resulting figure files, so they display on GitHub.
