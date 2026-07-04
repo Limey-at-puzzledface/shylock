@@ -6,19 +6,17 @@ Authors@R:
 Description: What the package does (one paragraph).
 License: MIT + file LICENSE
 Imports: 
-    bs4Dash,
     checkmate,
     cli,
-    data.table,
     glue,
     kableExtra,
     lifecycle,
     magrittr,
     rlang,
-    shiny,
-    testthat,
     tibble,
     withr
+Suggests:
+    testthat
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 8.0.0
+RoxygenNote: 7.3.3

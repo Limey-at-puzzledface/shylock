@@ -1,0 +1,21 @@
+---
+title: "ADR-0002"
+format: html
+editor: visual
+---
+
+## ADR-0002
+
+Represent Time-Varying Quantities as Schedules
+
+Instead of
+
+`annualRate = 0.0449`
+
+everything becomes
+
+`StartDate EndDate Value`
+
+Even a fixed mortgage has a one-row schedule.
+
+That means the engine has one algorithm instead of lots of special cases.

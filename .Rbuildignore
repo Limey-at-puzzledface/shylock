@@ -3,3 +3,10 @@
 ^pkgdown$
 ^LICENCE\.md$
 ^README\.Rmd$
+^ROADMAP\.Rmd$
+^.*\.Rproj$
+^\.Rproj\.user$
+^ARCHITECTURE\.qmd$
+^STYLE\.qmd$
+^docs$
+^\.github$

@@ -1,0 +1,28 @@
+---
+title: "ADR-0004"
+format: html
+editor: visual
+---
+
+# ADR-0004
+
+## Decision
+
+The analysis layer is a pure calculation engine. It is a Pure Calculation Engine.
+
+It
+
+- reads nothing,
+- writes nothing,
+- plots nothing,
+- prints nothing.
+
+Its only purpose is
+
+```         
+Inputs
+
+↓
+
+Outputs
+```
